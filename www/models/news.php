@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Alex
- * Date: 21.03.2016
- * Time: 16:51
- */
+require __DIR__ . '/../functions/sql.php';
+
+function News_getAll() {
+    Sql_connect();
+    $sql = 'SELECT * FROM news;';
+    return Sql_query($sql);
+}
