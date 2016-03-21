@@ -2,4 +2,6 @@
 
 require __DIR__ . '/models/news.php';
 
-News_getAll();
+$items = News_getAll();
+
+include __DIR__ . '/views/index.php';
