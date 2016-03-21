@@ -8,8 +8,8 @@
     <?php
     foreach ($items as $item) :?>
 
-        <br><img src="<?php echo $item['path'];?>" style="max-width: 300px">
         <br><?php echo $item['title']; ?>
+        <br><img src="<?php echo $item['path'];?>" style="max-width: 300px">
 
     <?php endforeach; ?>
 </body>
