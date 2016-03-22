@@ -5,12 +5,12 @@
     <title>Новости</title>
 </head>
 <body>
+
     <?php
     foreach ($items as $item) :?>
-
         <br><?php echo $item['title']; ?>
-        <br><img src="<?php echo $item['path'];?>" style="max-width: 300px">
-
+        <br><a href=<?php __DIR__ ?>"/../page.php?id=<?php echo $item['id'];?>"><img src="<?php echo $item['path'];?>"style="max-width: 300px"></a>
     <?php endforeach; ?>
+
 </body>
 </html>
