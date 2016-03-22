@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости</title>
+</head>
+<body>
+
 <form action=<?php __DIR__ ?>"/add.php" method="post" enctype="multipart/form-data">
     Добавить новость:<br>
     <label for="title">Название</label>
@@ -11,3 +19,6 @@
     <br>
     <input type="submit">
 </form>
+
+</body>
+</html>
